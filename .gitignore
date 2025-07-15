@@ -1,0 +1,10 @@
+instance
+.DS_Store
+.idea
+bl
+.env
+__pycache__
+The_Blog
+.ruff_cache
+temp_uploads
+venv
