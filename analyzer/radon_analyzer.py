@@ -17,4 +17,4 @@ def analyze_radon(files: list[str], mode: str = "cc") -> str:
     
     result = subprocess.run(command, capture_output=True, text=True)
 
-    return result.stdout if result.returncode==0 else "No output"
+    return result.stdout if result.returncode==0 else result.stderr

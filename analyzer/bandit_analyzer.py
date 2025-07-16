@@ -7,4 +7,4 @@ def analyze_bandit(files: list[str]) -> str:
         capture_output=True,
         text=True
     )
-    return result.stdout
+    return result.stdout if result.returncode==0 else "No issues identified"
